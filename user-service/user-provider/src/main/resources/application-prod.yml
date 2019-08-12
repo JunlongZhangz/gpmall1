@@ -20,7 +20,7 @@ spring:
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
     useGlobalDataSourceStat: true
   redisson:
-    address: localhost:6379
+    address: 192.168.92.128:6379
     timeout: 3000
     database: 0
     pool:
@@ -36,12 +36,12 @@ dubbo:
     name: dubbo
     port: 20880
   registry:
-    address: zookeeper://localhost:2181
+    address: zookeeper://192.168.92.128:2181
     check: true
     group: dubbo-dev
     simplified: true
   metadata-report:
-    address: zookeeper://localhost:2181
+    address: zookeeper://192.168.92.128:2181
     retry-times: 30
     cycle-report: false
     group: dubbo-dev
